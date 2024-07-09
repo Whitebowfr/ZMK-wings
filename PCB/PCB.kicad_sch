@@ -2497,6 +2497,150 @@
 				)
 			)
 		)
+		(symbol "Diode:1N4148WT"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148WT"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-523"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?523*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148WT_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148WT_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "LED:WS2812B"
 			(pin_names
 				(offset 0.254)
@@ -2742,6 +2886,175 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PCM_marbastlib-mx:MX_SW_HS"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MX"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MX_SW_HS"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_1u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MX_SW_HS_0_1"
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5726,6 +6039,12 @@
 		(uuid "05ea63bc-03b8-456e-9a8f-243d7045b554")
 	)
 	(junction
+		(at 99.06 288.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0880182f-6a38-4934-8e44-59eaf7029689")
+	)
+	(junction
 		(at 336.55 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5948,6 +6267,12 @@
 		(uuid "a51ba7e1-f28e-484d-ad2e-36fbc276dc9e")
 	)
 	(junction
+		(at 99.06 307.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7b40de2-bcf5-4c24-a0fa-75d1287da54a")
+	)
+	(junction
 		(at 361.95 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6080,6 +6405,16 @@
 			(type default)
 		)
 		(uuid "051a5db2-3083-4504-9805-59773f4914e9")
+	)
+	(wire
+		(pts
+			(xy 99.06 288.29) (xy 118.11 288.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05ce8b35-b881-4ea6-a130-5b820b519bd6")
 	)
 	(wire
 		(pts
@@ -6230,6 +6565,16 @@
 			(type default)
 		)
 		(uuid "18960d4f-e1d8-4d2e-971a-c21a3553935e")
+	)
+	(wire
+		(pts
+			(xy 99.06 307.34) (xy 118.11 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1950ecc4-f3e1-4e64-97c5-5ad96320ead4")
 	)
 	(wire
 		(pts
@@ -6693,6 +7038,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 288.29) (xy 99.06 288.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5431d430-d02b-42cd-bc8d-a652ea3e22cd")
+	)
+	(wire
+		(pts
 			(xy 379.73 171.45) (xy 379.73 175.26)
 		)
 		(stroke
@@ -7010,6 +7365,16 @@
 			(type default)
 		)
 		(uuid "74f1af1c-6cf5-47b2-a667-1cb72e4c68f8")
+	)
+	(wire
+		(pts
+			(xy 90.17 307.34) (xy 99.06 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76790e9d-da7e-4b1d-8210-f7bdbf79ce34")
 	)
 	(wire
 		(pts
@@ -7843,6 +8208,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 275.59) (xy 113.03 294.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2547acf-f5f0-482a-8a6c-384e90729ed5")
+	)
+	(wire
+		(pts
 			(xy 379.73 193.04) (xy 361.95 193.04)
 		)
 		(stroke
@@ -7890,6 +8265,16 @@
 			(type default)
 		)
 		(uuid "f70fda54-9fec-4a69-80c0-782928b240aa")
+	)
+	(wire
+		(pts
+			(xy 93.98 275.59) (xy 93.98 294.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7de4929-9e24-4d1d-9649-9532233386b1")
 	)
 	(wire
 		(pts
@@ -7975,10 +8360,10 @@
 		)
 		(uuid d15b52b5-545a-41d1-a181-e6f760f1053a)
 	)
-	(text_box "MCU principal, recommandé d'utiliser uniquement les P0.xx OU les P1.xx pour la matrice"
+	(text_box "MCU principal, recommandé d'utiliser uniquement les P0.xx OU les P1.xx pour la matrice, s'il y a pas assez de pins vous pouvez le faire quand même c'est pas grave\n"
 		(exclude_from_sim no)
 		(at 407.035 264.16 0)
-		(size 35.56 8.255)
+		(size 38.1 11.43)
 		(stroke
 			(width 0)
 			(type default)
@@ -8213,6 +8598,50 @@
 			)
 		)
 	)
+	(global_label "col0"
+		(shape input)
+		(at 93.98 275.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "392fda45-eb41-441b-a46f-d7ae89db43c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 87.4545 275.6694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row1"
+		(shape input)
+		(at 361.95 290.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "542b90e6-514e-494c-b852-d21e2818d6e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.4104 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDA"
 		(shape bidirectional)
 		(at 316.23 323.85 180)
@@ -8226,6 +8655,50 @@
 		(uuid "586ecc36-0430-4b31-b556-f8adde69b92f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 308.5654 323.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row0"
+		(shape output)
+		(at 90.17 288.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5aad79b9-2062-49d8-9503-74b725a4005d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.2817 288.2106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row1"
+		(shape output)
+		(at 90.17 307.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ce869a0-ad17-4194-b75b-55c93464d0e4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.2817 307.2606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8270,6 +8743,28 @@
 		(uuid "6cf0381d-ece9-4019-9a96-94f53a3ed3d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 415.3723 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col0"
+		(shape output)
+		(at 361.95 288.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "756f5b64-dec6-48cf-b20b-de0049bb98b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.0475 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8358,6 +8853,28 @@
 		(uuid "af759bbd-7971-4e34-b61d-de9bd0ffa6c1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 371.8294 328.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row0"
+		(shape input)
+		(at 361.95 295.91 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b064b74b-6457-4184-9a5b-6e2f10d56df4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.4104 295.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8477,6 +8994,28 @@
 			)
 		)
 	)
+	(global_label "col1"
+		(shape output)
+		(at 361.95 285.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c82ea48d-7dfd-4e3a-ac92-d83b5e173f9c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.0475 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D-"
 		(shape bidirectional)
 		(at 316.23 300.99 180)
@@ -8561,6 +9100,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col1"
+		(shape input)
+		(at 113.03 275.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f32af930-f38d-4f24-987b-947fb5ab95cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.5045 275.6694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -9074,6 +9635,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 118.11 303.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10b036cb-db0a-4447-aab5-9ad6a2067a95")
+		(property "Reference" "D16"
+			(at 120.65 302.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 120.65 304.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 122.555 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(at 118.11 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f18e60f-e8dd-4a94-afa9-9f68c9b66291")
+		)
+		(pin "2"
+			(uuid "ada407a2-c05e-416c-8b50-2ce7204444b0")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 361.95 185.42 0)
 		(unit 1)
@@ -9506,6 +10137,76 @@
 			(project "PCB"
 				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 99.06 303.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1acf39df-0b23-46ae-87f0-daa81b8b79d3")
+		(property "Reference" "D14"
+			(at 101.6 302.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 101.6 304.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 103.505 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(at 99.06 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7bb84b4a-9c4c-4cfd-b76e-0da9b64afc25")
+		)
+		(pin "2"
+			(uuid "88dd5a62-5d8a-430e-9364-844382126853")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -11982,6 +12683,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 118.11 284.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a7fda69-f6da-48b5-a4e0-1c22b8bc898f")
+		(property "Reference" "D15"
+			(at 120.65 283.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 120.65 285.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 122.555 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(at 118.11 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61370458-8a81-4675-abec-d575d7e94c2a")
+		)
+		(pin "2"
+			(uuid "1c752159-19f5-4480-82bf-a75862b37b4b")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
 		(at 289.56 283.21 180)
 		(unit 1)
@@ -12053,6 +12824,76 @@
 			(project "PCB"
 				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 99.06 284.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8eed1ca3-ab4c-440c-8401-c5baec1b6a51")
+		(property "Reference" "D13"
+			(at 101.6 283.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 101.6 285.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 103.505 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(at 99.06 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55b2a893-6ec9-4fae-bc5c-23d704202b02")
+		)
+		(pin "2"
+			(uuid "f8574995-6d65-45bd-8b04-e3587712c0fa")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -12276,6 +13117,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS")
+		(at 96.52 297.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4230cf3-8891-4874-b5e6-501bec25b32f")
+		(property "Reference" "SW5"
+			(at 96.52 290.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 96.52 292.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 96.52 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2eadd82a-0c51-4500-a1dd-82c1d34f101f")
+		)
+		(pin "2"
+			(uuid "1dde951c-3a75-48d0-aa8b-bd1badb9c592")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 208.28 97.79 0)
 		(unit 1)
@@ -12425,6 +13333,73 @@
 			(project "PCB"
 				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
 					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS")
+		(at 96.52 278.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abfab121-a7e0-42a3-b264-561962b1907f")
+		(property "Reference" "SW4"
+			(at 96.52 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 96.52 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 96.52 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8aeedef3-a01b-4497-a94d-76ddb9f12681")
+		)
+		(pin "2"
+			(uuid "d8a96c1c-4c8a-44eb-a999-aaebfbfcc329")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -13523,6 +14498,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS")
+		(at 115.57 278.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c604ca63-680e-4359-b4e6-2c5b49594bf8")
+		(property "Reference" "SW6"
+			(at 115.57 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 115.57 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 115.57 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7e8b463-f3b4-463f-b338-721098f63330")
+		)
+		(pin "2"
+			(uuid "af532dbe-350b-4c86-bf64-5f0aabb0a868")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 361.95 193.04 0)
 		(unit 1)
@@ -14400,6 +15442,73 @@
 			(project "PCB"
 				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS")
+		(at 115.57 297.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0504bc7-8ad3-4768-8831-a95a6c85e9ac")
+		(property "Reference" "SW7"
+			(at 115.57 290.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 115.57 292.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:SW_MX_HS_CPG151101S11_1u"
+			(at 115.57 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86cd2aaa-893e-4877-9c4a-f4403dccb5e3")
+		)
+		(pin "2"
+			(uuid "cc7e5396-3820-4655-a2ff-09fa7e075107")
+		)
+		(instances
+			(project "PCB"
+				(path "/842f2e66-71a4-4e2a-84a7-1da2cc8bf3e9"
+					(reference "SW7")
 					(unit 1)
 				)
 			)
