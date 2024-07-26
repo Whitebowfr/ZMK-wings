@@ -39,6 +39,45 @@
 		(58 "User.9" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
@@ -258,6 +297,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -271,6 +311,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -284,6 +325,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -474,6 +516,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -487,6 +530,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -500,6 +544,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -690,6 +735,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -703,6 +749,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -716,6 +763,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -960,6 +1008,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -973,6 +1022,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -986,6 +1036,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -1403,11 +1454,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "062c6409-1db4-453a-8669-a28908161860")
-		(at 135.73125 70.64375 90)
+		(at 135.73125 69.85 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D43"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "bb05e561-1633-4315-a1eb-9296a2cd8d9e")
 			(effects
@@ -1419,7 +1470,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "c329fdb8-317d-4a41-b72c-f4cd1b466f55")
 			(effects
@@ -1439,6 +1490,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -1452,6 +1504,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -1465,6 +1518,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -1645,7 +1699,7 @@
 			(uuid "e5bc9685-47f7-4525-8c72-f5d9d8e9a892")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "ff1d8cb8-4208-46e2-8563-325e27ff972e")
 			(effects
@@ -1726,6 +1780,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -1739,6 +1794,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -1752,6 +1808,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -1832,7 +1889,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -2090,7 +2147,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -2173,7 +2230,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -2301,7 +2358,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "0a7d5c43-4358-46ea-a1ae-f383cd38c271")
-		(at 109.5375 150.8125 180)
+		(at 109.5375 54.290001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D35"
@@ -2317,7 +2374,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at -104.675 -3.47 180)
+			(at -2.38125 -3.47 180)
 			(layer "B.Fab")
 			(uuid "a2badc57-322c-4dec-abe4-c205fae6f0af")
 			(effects
@@ -2337,6 +2394,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -2350,6 +2408,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -2363,6 +2422,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -2520,7 +2580,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -2542,7 +2602,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -2553,7 +2613,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -2608,7 +2668,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -2835,7 +2895,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D44"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "b2c0bc11-0493-46a6-bd97-9da7cfa2ad01")
 			(effects
@@ -2847,7 +2907,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "82212e2d-39dc-40be-b3d1-4d15ff79bd68")
 			(effects
@@ -2867,6 +2927,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -2880,6 +2941,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -2893,6 +2955,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3073,7 +3136,7 @@
 			(uuid "e4b57e4f-ee71-4206-9a2b-d0d4b818fee8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "783af4cb-4fea-495b-91e2-a99201db5e9d")
 			(effects
@@ -3154,6 +3217,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3167,6 +3231,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3180,6 +3245,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3260,7 +3326,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -3518,7 +3584,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -3601,7 +3667,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -3729,11 +3795,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "171dde7a-5f41-456f-ac16-a0bd4a2eaf14")
-		(at 192.88125 70.64375 90)
+		(at 192.88125 69.85 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D58"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "78e7b48f-a087-4a0f-829d-78f2a0d79354")
 			(effects
@@ -3745,7 +3811,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "3ad0e306-2c7c-4a9d-a2b8-2d0f3746f673")
 			(effects
@@ -3765,6 +3831,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3778,6 +3845,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3791,6 +3859,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3971,7 +4040,7 @@
 			(uuid "b08da8be-cf70-4aa0-bed0-8520d44c5e5e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "b147f250-7fcf-4c31-9871-25df6f82637c")
 			(effects
@@ -4017,7 +4086,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "1bea27e1-8815-44f7-9bdd-dfa8f0064d65")
-		(at 128.5875 169.8625 180)
+		(at 128.56 73.41 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D27"
@@ -4053,6 +4122,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4066,6 +4136,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4079,6 +4150,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4236,7 +4308,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -4258,7 +4330,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -4269,7 +4341,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -4324,7 +4396,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -4583,6 +4655,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4596,6 +4669,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4609,6 +4683,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4767,7 +4842,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D61"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "d5e759f9-9ef2-4ab1-b6f0-3329e36fcca6")
 			(effects
@@ -4779,7 +4854,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "8a75a61f-e427-45df-b714-68a9ac149ba9")
 			(effects
@@ -4799,6 +4874,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4812,6 +4888,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -4825,6 +4902,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5005,7 +5083,7 @@
 			(uuid "b9d15932-0c7a-4071-a9d0-66aea0f5c6b2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "879d90bc-13f5-44be-a653-b6732e86e711")
 			(effects
@@ -5055,7 +5133,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D51"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "1a8e5150-7696-48e4-8f45-cd5032240eab")
 			(effects
@@ -5067,7 +5145,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "9d48be45-87d7-4c89-bb4d-babb3304e8ca")
 			(effects
@@ -5087,6 +5165,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5100,6 +5179,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5113,6 +5193,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5293,7 +5374,7 @@
 			(uuid "9583c02a-9baa-448c-9692-214dd534dc25")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "7390da81-9bab-4fe8-96cd-5dab46c2e662")
 			(effects
@@ -5339,7 +5420,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "20bf8978-389b-4d2c-ac5f-dcee4fca42f0")
-		(at 109.5375 188.9125 180)
+		(at 147.6375 54.290001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D33"
@@ -5355,7 +5436,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at -104.675 -3.47 180)
+			(at -2.38125 -3.47 180)
 			(layer "B.Fab")
 			(uuid "35b23a85-4786-4cf7-b5c2-b8a6f21b2588")
 			(effects
@@ -5375,6 +5456,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5388,6 +5470,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5401,6 +5484,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5558,7 +5642,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -5580,7 +5664,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -5591,7 +5675,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -5646,7 +5730,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -5904,6 +5988,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5917,6 +6002,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -5930,6 +6016,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6010,7 +6097,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -6268,7 +6355,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -6351,7 +6438,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -6483,7 +6570,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D49"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "d36238eb-3497-45d6-89ee-473506168d6e")
 			(effects
@@ -6495,7 +6582,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "e4c1aa31-b802-468d-b301-c3efdd5ee51f")
 			(effects
@@ -6515,6 +6602,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6528,6 +6616,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6541,6 +6630,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6721,7 +6811,7 @@
 			(uuid "a669cc33-8996-4d9c-9635-d8dbb98becec")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "b1598db0-382e-4ed9-89fd-763737195761")
 			(effects
@@ -6802,6 +6892,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6815,6 +6906,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6828,6 +6920,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6908,7 +7001,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -7166,7 +7259,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -7249,7 +7342,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -7377,7 +7470,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "27387dcc-b71c-4cdd-a475-c0f49c4eca13")
-		(at 223.8375 111.91875 180)
+		(at 223.85 111.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D8"
@@ -7413,6 +7506,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -7426,6 +7520,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -7439,6 +7534,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -7596,7 +7692,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -7618,7 +7714,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -7629,7 +7725,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -7684,7 +7780,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -7942,6 +8038,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -7955,6 +8052,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -7968,6 +8066,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8048,7 +8147,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -8306,7 +8405,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -8389,7 +8488,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -8553,6 +8652,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8566,6 +8666,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8579,6 +8680,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8769,6 +8871,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8782,6 +8885,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8795,6 +8899,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9239,6 +9344,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9252,6 +9358,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9265,6 +9372,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9419,7 +9527,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "2ace3ef0-02f5-417e-b1b7-c61366b6cd79")
-		(at 109.5375 227.0125 180)
+		(at 185.6825 54.290001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D31"
@@ -9435,7 +9543,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at -104.675 -3.47 180)
+			(at -2.38125 -3.47 180)
 			(layer "B.Fab")
 			(uuid "522f9125-af7a-4ec4-b7e6-b85052880b61")
 			(effects
@@ -9455,6 +9563,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9468,6 +9577,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9481,6 +9591,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9638,7 +9749,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -9660,7 +9771,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -9671,7 +9782,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -9726,7 +9837,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -9953,7 +10064,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D52"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "6773b960-8523-4976-9975-1efb8e1aa2dd")
 			(effects
@@ -9965,7 +10076,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "292b6975-2c3c-43fc-a0a0-e2a7c2970fa5")
 			(effects
@@ -9985,6 +10096,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9998,6 +10110,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10011,6 +10124,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10191,7 +10305,7 @@
 			(uuid "a51f990c-c532-4962-87ad-2723a27f1339")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "f451587e-5ebf-41e8-bf2a-f1981a9024de")
 			(effects
@@ -10241,7 +10355,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D50"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "9c27eee9-a71f-4d3a-acda-9ab3284473a1")
 			(effects
@@ -10253,7 +10367,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "78770068-cf0f-42da-a4a5-d1e9e545939a")
 			(effects
@@ -10273,6 +10387,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10286,6 +10401,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10299,6 +10415,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10479,7 +10596,7 @@
 			(uuid "008dc7e8-b1c5-499e-8569-c2eeb60bf828")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "fb30f875-05ee-474a-a08f-9b1293146215")
 			(effects
@@ -10525,7 +10642,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "2d98a4db-df79-4bf5-954b-7ae7e8297edb")
-		(at 223.8375 73.81875 180)
+		(at 223.81 73.41 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D22"
@@ -10561,6 +10678,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10574,6 +10692,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10587,6 +10706,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10744,7 +10864,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -10766,7 +10886,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -10777,7 +10897,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -10832,7 +10952,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -11090,6 +11210,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11103,6 +11224,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11116,6 +11238,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11196,7 +11319,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -11454,7 +11577,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -11537,7 +11660,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -11701,6 +11824,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11714,6 +11838,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11727,6 +11852,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11935,7 +12061,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "319d5b37-4c28-447d-8069-280620854f75")
-		(at 147.6375 111.91875 180)
+		(at 147.65 111.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D12"
@@ -11971,6 +12097,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11984,6 +12111,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11997,6 +12125,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12154,7 +12283,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -12176,7 +12305,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -12187,7 +12316,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -12242,7 +12371,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -12501,6 +12630,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12514,6 +12644,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12527,6 +12658,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12719,6 +12851,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12732,6 +12865,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12745,6 +12879,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12862,7 +12997,7 @@
 			(uuid "22c44188-0453-4bfa-93e8-52a044ee5d20")
 		)
 		(fp_text user "KEEP-OUT ZONE"
-			(at 0 10 360)
+			(at 0 10 0)
 			(layer "Cmts.User")
 			(uuid "65e7ef17-e7ff-4ba1-b10e-e4c2e8b4a202")
 			(effects
@@ -12873,7 +13008,7 @@
 			)
 		)
 		(fp_text user "Antenna"
-			(at 0 7.4 360)
+			(at 0 7.4 0)
 			(layer "Cmts.User")
 			(uuid "8303e37f-b448-4f1f-a43e-ebf9ca41ce98")
 			(effects
@@ -12884,7 +13019,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "4c84bedd-b747-474c-9105-64c686f2b108")
 			(effects
@@ -13428,7 +13563,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D62"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "6ff0093a-2933-4490-9bb1-2171e94bf2a6")
 			(effects
@@ -13440,7 +13575,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "fb7e556f-476b-4bc1-bd0a-1cd197b87ec5")
 			(effects
@@ -13460,6 +13595,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13473,6 +13609,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13486,6 +13623,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13666,7 +13804,7 @@
 			(uuid "da5c3f98-46ac-4d85-97bb-c9470f099e6c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "b89826b5-acaa-4f28-808f-c79d69686acb")
 			(effects
@@ -13747,6 +13885,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13760,6 +13899,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13773,6 +13913,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13853,7 +13994,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -14111,7 +14252,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -14194,7 +14335,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -14358,6 +14499,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -14371,6 +14513,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -14384,6 +14527,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -14538,7 +14682,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "3d2c9934-2b34-47eb-a9c3-6e8e0310aec3")
-		(at 147.6375 92.86875 180)
+		(at 185.7 92.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D17"
@@ -14554,7 +14698,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 47.725 -3.47 180)
+			(at 9.18125 -3.925 180)
 			(layer "B.Fab")
 			(uuid "c690f1ea-8e59-4aae-8310-711aad04e4a6")
 			(effects
@@ -14574,6 +14718,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -14587,6 +14732,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -14600,6 +14746,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -14757,7 +14904,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -14779,7 +14926,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -14790,7 +14937,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -14845,7 +14992,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -15103,6 +15250,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15116,6 +15264,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15129,6 +15278,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15209,7 +15359,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -15467,7 +15617,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -15550,7 +15700,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -15714,6 +15864,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15727,6 +15878,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15740,6 +15892,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15930,6 +16083,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15943,6 +16097,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -15956,6 +16111,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -16115,7 +16271,7 @@
 		)
 		(fp_arc
 			(start 2.088783 -0.355)
-			(mid 2.188789 -0.328211)
+			(mid 2.188776 -0.328203)
 			(end 2.261988 -0.255)
 			(stroke
 				(width 0.08)
@@ -16463,7 +16619,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D41"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "b945f8b3-a99c-46cc-90ac-de3996f07c27")
 			(effects
@@ -16475,7 +16631,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "58d8dd57-b721-4591-8ff0-bf4652ad4704")
 			(effects
@@ -16495,6 +16651,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -16508,6 +16665,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -16521,6 +16679,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -16701,7 +16860,7 @@
 			(uuid "eaa5c307-4dd8-4d52-bd55-e4eab1e5aeee")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "ce502d5f-d6aa-4aae-8297-047222c7fa45")
 			(effects
@@ -16747,7 +16906,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "4957ec6b-ada5-4700-930c-56919fb1bdfb")
-		(at 166.6875 73.81875 180)
+		(at 166.66 73.41 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D25"
@@ -16783,6 +16942,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -16796,6 +16956,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -16809,6 +16970,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -16966,7 +17128,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -16988,7 +17150,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -16999,7 +17161,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -17054,7 +17216,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -17277,7 +17439,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "4aeca302-66f6-4cdf-bb65-72548712b372")
-		(at 185.7375 130.96875 180)
+		(at 147.6375 130.510001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D5"
@@ -17313,6 +17475,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -17326,6 +17489,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -17339,6 +17503,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -17496,7 +17661,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -17518,7 +17683,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -17529,7 +17694,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -17584,7 +17749,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -17807,11 +17972,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "4f202c40-45aa-40cb-8429-a529c812fac7")
-		(at 211.93125 70.64375 90)
+		(at 211.93125 69.85 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D63"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "8a8b90c5-1390-47e2-9f52-a0522427d28f")
 			(effects
@@ -17823,7 +17988,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "b1522e2d-6c56-4eea-a01e-6705b234256c")
 			(effects
@@ -17843,6 +18008,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -17856,6 +18022,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -17869,6 +18036,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18049,7 +18217,7 @@
 			(uuid "23b839b5-3c36-4fa6-87b6-5aa92fa79939")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "469e547b-a2d6-4927-bafa-b73fff967ffa")
 			(effects
@@ -18095,7 +18263,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "4f4cc427-94c5-4185-8a8a-50c027e2f059")
-		(at 185.7375 92.86875 180)
+		(at 147.6 92.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D19"
@@ -18111,7 +18279,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 47.725 -3.47 180)
+			(at 9.18125 -3.925 180)
 			(layer "B.Fab")
 			(uuid "e27dbf9c-2938-42d5-a24f-80069f92b556")
 			(effects
@@ -18131,6 +18299,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18144,6 +18313,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18157,6 +18327,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18314,7 +18485,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -18336,7 +18507,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -18347,7 +18518,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -18402,7 +18573,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -18629,7 +18800,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D66"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "e5021190-7883-4dc5-9c47-a1fe261c0410")
 			(effects
@@ -18641,7 +18812,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "2fcc29ae-18ca-49ca-9582-ff9fa7b39c98")
 			(effects
@@ -18661,6 +18832,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18674,6 +18846,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18687,6 +18860,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18867,7 +19041,7 @@
 			(uuid "7bf4a1aa-9984-4612-b47f-7f943bfa5dd1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "cf8902a9-3a96-472c-b046-7ec262502cca")
 			(effects
@@ -18948,6 +19122,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18961,6 +19136,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -18974,6 +19150,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -19054,7 +19231,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -19312,7 +19489,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -19395,7 +19572,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -19523,11 +19700,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "52b47619-67f8-44c6-b403-06ea2c9cd39b")
-		(at 116.68125 70.64375 90)
+		(at 116.68125 69.85 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D38"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "c169252d-218e-47c3-b28a-0782ba7bf13b")
 			(effects
@@ -19539,7 +19716,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "41c6b4a0-362b-4582-9f87-821a720ea83f")
 			(effects
@@ -19559,6 +19736,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -19572,6 +19750,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -19585,6 +19764,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -19765,7 +19945,7 @@
 			(uuid "9d6cee2b-ee62-4e46-9dea-af8608565189")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "2003d00a-92f2-4296-9115-8e029fadb970")
 			(effects
@@ -19846,6 +20026,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -19859,6 +20040,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -19872,6 +20054,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -19952,7 +20135,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -20210,7 +20393,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -20293,7 +20476,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -20421,11 +20604,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "54811ac6-be10-42cd-a63b-1df363f744c4")
-		(at 230.98125 70.64375 90)
+		(at 230.98125 69.85 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D68"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "162dae69-557c-4c1d-9eb6-b9be7f3132a0")
 			(effects
@@ -20437,7 +20620,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "4865bc9c-89b6-49ce-907d-807a55eb59c0")
 			(effects
@@ -20457,6 +20640,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20470,6 +20654,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20483,6 +20668,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20663,7 +20849,7 @@
 			(uuid "693ef654-88d5-4acb-b58c-7a711b80afa0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "29cd3d83-a746-4462-b9ae-09f42b4e639d")
 			(effects
@@ -20745,6 +20931,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20758,6 +20945,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20771,6 +20959,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20961,6 +21150,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20974,6 +21164,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -20987,6 +21178,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21145,7 +21337,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D39"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "925d70b4-d2e1-46fb-9685-87b420e6fd8c")
 			(effects
@@ -21157,7 +21349,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "bedb10dc-4f7a-4e4b-ad72-0062c9e6cb3b")
 			(effects
@@ -21177,6 +21369,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21190,6 +21383,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21203,6 +21397,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21383,7 +21578,7 @@
 			(uuid "d06776eb-3531-44e3-bd44-fe0ddf8db306")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "7c47c608-2cc6-45aa-8d76-9de72975f303")
 			(effects
@@ -21429,7 +21624,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "572e12a6-6e66-4365-b5ee-049e25863a69")
-		(at 166.6875 111.91875 180)
+		(at 166.7 111.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D11"
@@ -21465,6 +21660,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21478,6 +21674,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21491,6 +21688,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21648,7 +21846,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -21670,7 +21868,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -21681,7 +21879,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -21736,7 +21934,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -21994,6 +22192,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22007,6 +22206,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22020,6 +22220,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22100,7 +22301,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -22358,7 +22559,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -22441,7 +22642,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -22573,7 +22774,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D56"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "c21a8502-9f17-4012-875b-80fb1e46e9e9")
 			(effects
@@ -22585,7 +22786,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "ba124a3f-bff0-43cf-818e-9405ddc0b30a")
 			(effects
@@ -22605,6 +22806,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22618,6 +22820,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22631,6 +22834,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22811,7 +23015,7 @@
 			(uuid "d444fdef-4134-4844-9b8a-b1194a54f9cd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "03aa78b9-fa30-4187-b46c-1f83b917fc08")
 			(effects
@@ -22861,7 +23065,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D59"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "067cc963-c035-4b94-9aec-241acee75803")
 			(effects
@@ -22873,7 +23077,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "f6e4c542-469d-457f-83be-b2e0de55ff69")
 			(effects
@@ -22893,6 +23097,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22906,6 +23111,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -22919,6 +23125,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23099,7 +23306,7 @@
 			(uuid "0b50d3cb-50c5-4e84-b1f2-2dabcda9e16a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "e20ee69e-224a-4b31-86ee-e2322966599b")
 			(effects
@@ -23181,6 +23388,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23194,6 +23402,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23207,6 +23416,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23361,7 +23571,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "6335f6ce-60c7-4025-810e-beeaf08064fc")
-		(at 185.7375 73.81875 180)
+		(at 185.71 73.41 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D24"
@@ -23397,6 +23607,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23410,6 +23621,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23423,6 +23635,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23580,7 +23793,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -23602,7 +23815,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -23613,7 +23826,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -23668,7 +23881,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -23926,6 +24139,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23939,6 +24153,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23952,6 +24167,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -24032,7 +24248,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -24290,7 +24506,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -24373,7 +24589,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -24536,6 +24752,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -24549,6 +24766,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -24562,6 +24780,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -24642,7 +24861,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -24900,7 +25119,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -24983,7 +25202,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -25146,6 +25365,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25159,6 +25379,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25172,6 +25393,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25252,7 +25474,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -25510,7 +25732,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -25593,7 +25815,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -25757,6 +25979,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25770,6 +25993,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25783,6 +26007,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25972,6 +26197,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25985,6 +26211,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25998,6 +26225,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -26078,7 +26306,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -26336,7 +26564,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -26419,7 +26647,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -26547,7 +26775,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "6b664130-01a5-4f62-9111-82185bd2b6ed")
-		(at 109.5375 207.9625 180)
+		(at 166.6325 54.290001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D32"
@@ -26563,7 +26791,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at -104.675 -3.47 180)
+			(at -2.38125 -3.47 180)
 			(layer "B.Fab")
 			(uuid "bf21554a-3b6e-4278-9ab7-3f793b88ab59")
 			(effects
@@ -26583,6 +26811,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -26596,6 +26825,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -26609,6 +26839,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -26766,7 +26997,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -26788,7 +27019,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -26799,7 +27030,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -26854,7 +27085,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -27113,6 +27344,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27126,6 +27358,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27139,6 +27372,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27297,7 +27531,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D69"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "cfe18d2e-d3a5-4b02-bfd8-d4500317f1d4")
 			(effects
@@ -27309,7 +27543,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "35411ec0-04e8-4997-af93-f16783b77d9d")
 			(effects
@@ -27329,6 +27563,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27342,6 +27577,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27355,6 +27591,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27535,7 +27772,7 @@
 			(uuid "56179f6e-bf7a-423d-9c0c-01df11579a9d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "895de926-887a-4e82-b2ed-95f1e560082b")
 			(effects
@@ -27617,6 +27854,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27630,6 +27868,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27643,6 +27882,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27919,7 +28159,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "70174e90-fcfe-47ae-ba87-27f663a4b265")
-		(at 128.5875 92.86875 180)
+		(at 204.75 92.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D16"
@@ -27935,7 +28175,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 47.725 -3.47 180)
+			(at 9.18125 -3.925 180)
 			(layer "B.Fab")
 			(uuid "abca9f63-5ffc-4340-9f4d-b7e99cd05325")
 			(effects
@@ -27955,6 +28195,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27968,6 +28209,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27981,6 +28223,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -28138,7 +28381,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -28160,7 +28403,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -28171,7 +28414,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -28226,7 +28469,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -28449,7 +28692,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "7103d051-f675-46fe-9916-2cda7fab2729")
-		(at 147.6375 130.96875 180)
+		(at 185.7375 130.510001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D3"
@@ -28485,6 +28728,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -28498,6 +28742,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -28511,6 +28756,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -28668,7 +28914,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -28690,7 +28936,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -28701,7 +28947,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -28756,7 +29002,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -29014,6 +29260,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29027,6 +29274,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29040,6 +29288,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29120,7 +29369,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -29378,7 +29627,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -29461,7 +29710,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -29625,6 +29874,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29638,6 +29888,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29651,6 +29902,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29805,11 +30057,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "73e98546-4e92-42fc-a3ce-76fead4a8bbc")
-		(at 192.88125 108.74375 90)
+		(at 192.88125 107.95 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D60"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "4d7eedf2-094b-4e9d-8f3b-1ada4049587a")
 			(effects
@@ -29821,7 +30073,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "53359dfc-276f-470b-9fd6-64d2c63b4d39")
 			(effects
@@ -29841,6 +30093,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29854,6 +30107,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -29867,6 +30121,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30047,7 +30302,7 @@
 			(uuid "52e6ef85-1002-443a-ad96-5ab817a2d026")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "23318806-397e-4c68-931f-fe4eaf44ccf0")
 			(effects
@@ -30093,7 +30348,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "750a4121-0fef-4e83-bebf-2a32693a9fc3")
-		(at 109.5375 169.8625 180)
+		(at 128.5325 54.290001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D34"
@@ -30109,7 +30364,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at -104.675 -3.47 180)
+			(at -2.38125 -3.47 180)
 			(layer "B.Fab")
 			(uuid "55f8928b-08b6-4084-b069-d9b844cd03a9")
 			(effects
@@ -30129,6 +30384,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30142,6 +30398,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30155,6 +30412,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30312,7 +30570,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -30334,7 +30592,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -30345,7 +30603,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -30400,7 +30658,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -30659,6 +30917,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30672,6 +30931,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30685,6 +30945,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30843,7 +31104,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D64"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "2881b0bc-7e81-40ce-9136-1c3f9d0b9541")
 			(effects
@@ -30855,7 +31116,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "8b624040-1361-471f-93ab-e99167caffca")
 			(effects
@@ -30875,6 +31136,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30888,6 +31150,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30901,6 +31164,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31081,7 +31345,7 @@
 			(uuid "25cc30a2-adbd-4715-b8e4-8b7218057838")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "d383efc6-272d-479f-a01f-987256d37912")
 			(effects
@@ -31127,11 +31391,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "7a34ba72-46d6-4dd1-bddb-ada7601c74a3")
-		(at 211.93125 108.74375 90)
+		(at 211.93125 107.95 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D65"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "3c7744df-de5a-446a-8c0d-69c95ff55363")
 			(effects
@@ -31143,7 +31407,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "012f79ba-f73e-4ee3-b053-94cdb58e056e")
 			(effects
@@ -31163,6 +31427,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31176,6 +31441,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31189,6 +31455,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31369,7 +31636,7 @@
 			(uuid "bfe4976c-32c8-49c9-8235-8815b9c5f449")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "6674900e-b6eb-41f3-8432-32a28bf6a03c")
 			(effects
@@ -31451,6 +31718,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31464,6 +31732,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31477,6 +31746,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31685,7 +31955,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "7eac7e78-5203-4b0a-9b38-c554dad4a51f")
-		(at 128.5875 188.9125 180)
+		(at 109.4725 73.41 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D28"
@@ -31721,6 +31991,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31734,6 +32005,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31747,6 +32019,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -31904,7 +32177,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -31926,7 +32199,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -31937,7 +32210,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -31992,7 +32265,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -32250,6 +32523,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -32263,6 +32537,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -32276,6 +32551,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -32356,7 +32632,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -32614,7 +32890,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -32697,7 +32973,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -32825,11 +33101,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "80325954-81da-4c32-8500-96452ce2d319")
-		(at 173.83125 70.64375 90)
+		(at 173.83125 69.85 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D53"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "53d4ede4-f746-4bb6-b5ee-2bdbb248650f")
 			(effects
@@ -32841,7 +33117,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "1ed47cb6-0fe6-4dff-9e7f-8b725c11db5d")
 			(effects
@@ -32861,6 +33137,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -32874,6 +33151,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -32887,6 +33165,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33067,7 +33346,7 @@
 			(uuid "38986890-186d-4c00-a0b3-788d3fc0b216")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "6ec94efa-e015-4d6b-a00e-2eb6c6100c84")
 			(effects
@@ -33113,7 +33392,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "83a29270-ed03-4f43-a3f3-3e9070c70c52")
-		(at 204.7875 92.86875 180)
+		(at 128.55 92.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D20"
@@ -33149,6 +33428,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33162,6 +33442,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33175,6 +33456,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33332,7 +33614,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -33354,7 +33636,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -33365,7 +33647,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -33420,7 +33702,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -33643,11 +33925,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "87ea6a4a-326b-41e3-a4bb-42f3c5c2c4dc")
-		(at 173.83125 108.74375 90)
+		(at 173.83125 107.95 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D55"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "647d0070-9846-4e2c-b46f-e7d2282de46d")
 			(effects
@@ -33659,7 +33941,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "2998501a-46a4-44be-88a4-11ebed5bdb44")
 			(effects
@@ -33679,6 +33961,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33692,6 +33975,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33705,6 +33989,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33885,7 +34170,7 @@
 			(uuid "d74a5a8b-7b0a-4357-9435-8a24d9c8e5e7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "e8bb120c-087d-49d7-82d4-d304766b67cb")
 			(effects
@@ -33931,11 +34216,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "89eacfa7-77db-4095-b192-159496354b4b")
-		(at 116.68125 108.74375 90)
+		(at 116.68125 107.95 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D40"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "3a0b2bb6-9e77-488d-8e8e-d2349f996e90")
 			(effects
@@ -33947,7 +34232,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "63d307cb-da1a-439e-8128-ac495c9e3593")
 			(effects
@@ -33967,6 +34252,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33980,6 +34266,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -33993,6 +34280,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -34173,7 +34461,7 @@
 			(uuid "bccb0c49-5cc3-4e45-a2c5-9ed7c25aa15a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "09239fb0-3c67-406e-b728-5f4ff027ee92")
 			(effects
@@ -34219,7 +34507,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "8af018d1-bece-4104-9575-54e23521628b")
-		(at 109.5375 130.96875 180)
+		(at 223.8375 130.510001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D1"
@@ -34255,6 +34543,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -34268,6 +34557,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -34281,6 +34571,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -34438,7 +34729,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -34460,7 +34751,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -34471,7 +34762,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -34526,7 +34817,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -34749,7 +35040,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "8c408879-6658-4111-8f49-75821ade88a7")
-		(at 223.8375 92.86875 180)
+		(at 109.5 92.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D21"
@@ -34785,6 +35076,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -34798,6 +35090,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -34811,6 +35104,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -34968,7 +35262,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -34990,7 +35284,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -35001,7 +35295,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -35056,7 +35350,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -35314,6 +35608,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -35327,6 +35622,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -35340,6 +35636,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -35420,7 +35717,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -35678,7 +35975,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -35761,7 +36058,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -35925,6 +36222,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -35938,6 +36236,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -35951,6 +36250,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -36154,6 +36454,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -36167,6 +36468,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -36180,6 +36482,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -36260,7 +36563,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -36518,7 +36821,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -36601,7 +36904,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -36765,6 +37068,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -36778,6 +37082,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -36791,6 +37096,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -37576,6 +37882,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -37589,6 +37896,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -37602,6 +37910,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38000,7 +38309,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D67"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "eaa9f1f8-3642-46ef-9d6f-5fa03f6f7426")
 			(effects
@@ -38012,7 +38321,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "4cae9633-16d2-4c7b-a23f-6e0d3aae79a5")
 			(effects
@@ -38032,6 +38341,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38045,6 +38355,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38058,6 +38369,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38238,7 +38550,7 @@
 			(uuid "bd11747b-249e-4f45-bfd6-f777e531193b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "51051b51-cfb8-49da-b01d-da6a7273f5dc")
 			(effects
@@ -38319,6 +38631,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38332,6 +38645,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38345,6 +38659,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38425,7 +38740,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -38683,7 +38998,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -38766,7 +39081,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -38930,6 +39245,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38943,6 +39259,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -38956,6 +39273,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39145,6 +39463,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39158,6 +39477,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39171,6 +39491,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39251,7 +39572,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -39509,7 +39830,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -39592,7 +39913,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -39756,6 +40077,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39769,6 +40091,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39782,6 +40105,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39936,7 +40260,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "ae43351f-05ad-465c-a255-6264736c57b7")
-		(at 128.5875 130.96875 180)
+		(at 204.7875 130.510001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D2"
@@ -39972,6 +40296,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39985,6 +40310,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -39998,6 +40324,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -40155,7 +40482,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -40177,7 +40504,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -40188,7 +40515,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -40243,7 +40570,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -40502,6 +40829,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -40515,6 +40843,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -40528,6 +40857,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -40686,7 +41016,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D37"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "3dab20cf-a2e8-4923-98c5-ba4056493a98")
 			(effects
@@ -40698,7 +41028,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "ea3ef271-b0d5-4b10-8df0-910513a214cc")
 			(effects
@@ -40718,6 +41048,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -40731,6 +41062,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -40744,6 +41076,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -40924,7 +41257,7 @@
 			(uuid "e6009617-41b9-4f66-ae01-e8dab0293274")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "db9333e2-93b0-49f1-9f63-32b94001796d")
 			(effects
@@ -41006,6 +41339,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -41019,6 +41353,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -41032,6 +41367,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -41506,7 +41842,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "b5d2b3c3-f14e-4451-84b4-8bef85a982bf")
-		(at 204.7875 73.81875 180)
+		(at 204.76 73.41 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D23"
@@ -41542,6 +41878,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -41555,6 +41892,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -41568,6 +41906,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -41725,7 +42064,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -41747,7 +42086,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -41758,7 +42097,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -41813,7 +42152,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -42036,7 +42375,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "b7e40a9a-b79d-42e8-9776-26cd5b85f345")
-		(at 204.7875 130.96875 180)
+		(at 128.5875 130.510001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D6"
@@ -42072,6 +42411,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -42085,6 +42425,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -42098,6 +42439,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -42255,7 +42597,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -42277,7 +42619,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -42288,7 +42630,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -42343,7 +42685,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -42602,6 +42944,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -42615,6 +42958,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -42628,6 +42972,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -42975,7 +43320,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "bae79422-7ee0-4c02-a774-20843589ce34")
-		(at 128.5875 207.9625 180)
+		(at 223.8375 54.290001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D29"
@@ -43011,6 +43356,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -43024,6 +43370,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -43037,6 +43384,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -43194,7 +43542,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -43216,7 +43564,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -43227,7 +43575,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -43282,7 +43630,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -43505,7 +43853,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "bb39d767-c4fc-46ba-bf52-a9b9acf66681")
-		(at 128.5875 227.0125 180)
+		(at 204.7875 54.290001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D30"
@@ -43541,6 +43889,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -43554,6 +43903,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -43567,6 +43917,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -43724,7 +44075,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -43746,7 +44097,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -43757,7 +44108,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -43812,7 +44163,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -44070,6 +44421,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44083,6 +44435,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44096,6 +44449,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44176,7 +44530,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -44434,7 +44788,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -44517,7 +44871,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -44649,7 +45003,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D54"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "671c4c4d-1bf3-4fda-8997-3c62cf878f6c")
 			(effects
@@ -44661,7 +45015,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "c8c04482-807d-49b6-b056-dcb86b384500")
 			(effects
@@ -44681,6 +45035,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44694,6 +45049,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44707,6 +45063,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44887,7 +45244,7 @@
 			(uuid "8f41bd5e-c5ef-41f2-8e8c-47c93b4d454e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "60d5854d-3dce-4e16-9084-83779385714f")
 			(effects
@@ -44968,6 +45325,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44981,6 +45339,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -44994,6 +45353,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -45074,7 +45434,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -45332,7 +45692,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -45415,7 +45775,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -45543,7 +45903,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "c039c201-e49a-4734-a4b5-428ec9525f4c")
-		(at 185.7375 111.91875 180)
+		(at 185.75 111.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D10"
@@ -45579,6 +45939,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -45592,6 +45953,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -45605,6 +45967,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -45762,7 +46125,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -45784,7 +46147,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -45795,7 +46158,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -45850,7 +46213,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -46108,6 +46471,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -46121,6 +46485,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -46134,6 +46499,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -46214,7 +46580,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -46472,7 +46838,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -46555,7 +46921,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -46718,6 +47084,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -46731,6 +47098,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -46744,6 +47112,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -46824,7 +47193,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -47082,7 +47451,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -47165,7 +47534,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -47297,7 +47666,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D47"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "42a13bb3-e692-4269-a196-1129b2660426")
 			(effects
@@ -47309,7 +47678,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "61fff402-49b4-4043-9cba-d98d3a049a69")
 			(effects
@@ -47329,6 +47698,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -47342,6 +47712,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -47355,6 +47726,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -47535,7 +47907,7 @@
 			(uuid "6d68032e-0967-42da-b4a2-b12a3f4694f0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "0c7b3468-1305-451c-94f7-2ea43be4a33a")
 			(effects
@@ -47616,6 +47988,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -47629,6 +48002,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -47642,6 +48016,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -47722,7 +48097,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -47980,7 +48355,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -48063,7 +48438,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -48226,6 +48601,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -48239,6 +48615,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -48252,6 +48629,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -48332,7 +48710,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -48590,7 +48968,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -48673,7 +49051,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -48801,11 +49179,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "c88e4b38-aff3-46df-8deb-77303eb734a7")
-		(at 230.98125 108.74375 90)
+		(at 230.98125 107.95 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D70"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "0ac7d006-73d8-40ad-a75a-96c46459c482")
 			(effects
@@ -48817,7 +49195,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "0eccebae-79e6-4a63-97b0-8bd942a249fe")
 			(effects
@@ -48837,6 +49215,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -48850,6 +49229,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -48863,6 +49243,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49043,7 +49424,7 @@
 			(uuid "8c093bde-b397-4f7b-9786-1c2f1671690e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "202919a1-4de8-42c6-972e-e3407eadc8f5")
 			(effects
@@ -49089,11 +49470,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "c942561b-2a8e-46e9-b3a3-d49bd6b63714")
-		(at 154.78125 70.64375 90)
+		(at 154.78125 69.85 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D48"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "6a6c6f51-9c53-4a15-8983-cd621f7e612a")
 			(effects
@@ -49105,7 +49486,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "e3b3b829-1e1b-4803-9d40-eefcb56fbc5c")
 			(effects
@@ -49125,6 +49506,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49138,6 +49520,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49151,6 +49534,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49331,7 +49715,7 @@
 			(uuid "0a44edb9-41fb-44ae-9ba9-4388184058bb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "cd46135e-43c8-4204-8471-ce825fedab47")
 			(effects
@@ -49413,6 +49797,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49426,6 +49811,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49439,6 +49825,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49629,6 +50016,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49642,6 +50030,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49655,6 +50044,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49844,6 +50234,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49857,6 +50248,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49870,6 +50262,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -49950,7 +50343,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -50208,7 +50601,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -50291,7 +50684,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -50455,6 +50848,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -50468,6 +50862,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -50481,6 +50876,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -50671,6 +51067,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -50684,6 +51081,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -50697,6 +51095,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -50983,6 +51382,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -50996,6 +51396,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -51009,6 +51410,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -51089,7 +51491,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -51347,7 +51749,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -51430,7 +51832,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -51593,6 +51995,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -51606,6 +52009,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -51619,6 +52023,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -51699,7 +52104,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -51957,7 +52362,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -52040,7 +52445,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -52203,6 +52608,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -52216,6 +52622,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -52229,6 +52636,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -52309,7 +52717,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -52567,7 +52975,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -52650,7 +53058,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -52814,6 +53222,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -52827,6 +53236,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -52840,6 +53250,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53030,6 +53441,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53043,6 +53455,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53056,6 +53469,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53242,7 +53656,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D46"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "b5a76f42-90f4-498c-b8db-48f6aa5397db")
 			(effects
@@ -53254,7 +53668,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "91beb434-8dc7-45c3-b172-15bff12d0694")
 			(effects
@@ -53274,6 +53688,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53287,6 +53702,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53300,6 +53716,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53480,7 +53897,7 @@
 			(uuid "fe4b5958-dc95-48cf-9031-00e7acbceb94")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "520775c1-342c-4123-bc03-efbabf852275")
 			(effects
@@ -53562,6 +53979,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53575,6 +53993,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53588,6 +54007,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53902,7 +54322,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "db42e9ec-846f-473d-af30-54bb5c24cb4b")
-		(at 147.6375 73.81875 180)
+		(at 147.61 73.41 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D26"
@@ -53938,6 +54358,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53951,6 +54372,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -53964,6 +54386,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -54121,7 +54544,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -54143,7 +54566,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -54154,7 +54577,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -54209,7 +54632,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -54432,7 +54855,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "db5c5a06-efd5-458d-aeda-e08a356493e0")
-		(at 166.6875 130.96875 180)
+		(at 166.6875 130.510001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D4"
@@ -54468,6 +54891,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -54481,6 +54905,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -54494,6 +54919,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -54651,7 +55077,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -54673,7 +55099,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -54684,7 +55110,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -54739,7 +55165,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -54998,6 +55424,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55011,6 +55438,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55024,6 +55452,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55275,11 +55704,11 @@
 	(footprint "Diode_SMD:D_SOD-523"
 		(layer "B.Cu")
 		(uuid "dd5900bf-c9cd-45b8-abb8-ed02d9eea639")
-		(at 135.73125 108.74375 90)
+		(at 135.73125 107.95 90)
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D45"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "29c44579-9b06-42be-9cb3-78ca70815644")
 			(effects
@@ -55291,7 +55720,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "e147932f-22a3-47c5-add9-525cd57c6cc8")
 			(effects
@@ -55311,6 +55740,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55324,6 +55754,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55337,6 +55768,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55517,7 +55949,7 @@
 			(uuid "88ab7362-0ea8-4b61-9c93-b8669b91d2c7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "a9583b8f-f0c8-4e46-9bda-9a836abe2860")
 			(effects
@@ -55599,6 +56031,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55612,6 +56045,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55625,6 +56059,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55868,6 +56303,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55881,6 +56317,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55894,6 +56331,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -55974,7 +56412,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -56232,7 +56670,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -56315,7 +56753,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -56443,7 +56881,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "e0a5cecb-16bb-4d39-904c-87746b9f23e9")
-		(at 109.5375 92.86875 180)
+		(at 223.8 92.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D15"
@@ -56459,7 +56897,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at -9.425 -3.47 180)
+			(at -2.725 -3.47 180)
 			(layer "B.Fab")
 			(uuid "68ffe9f4-3f92-44bf-97b1-446ccda704b0")
 			(effects
@@ -56479,6 +56917,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -56492,6 +56931,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -56505,6 +56945,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -56662,7 +57103,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -56684,7 +57125,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -56695,7 +57136,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -56750,7 +57191,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -56973,7 +57414,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "e1d20d5c-0323-40ea-a1dc-c9cc886a2697")
-		(at 128.5875 111.91875 180)
+		(at 128.6 111.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D13"
@@ -57009,6 +57450,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -57022,6 +57464,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -57035,6 +57478,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -57192,7 +57636,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -57214,7 +57658,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -57225,7 +57669,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -57280,7 +57724,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -57538,6 +57982,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -57551,6 +57996,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -57564,6 +58010,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -57644,7 +58091,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -57902,7 +58349,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -57985,7 +58432,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -58117,7 +58564,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D57"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "a664db1e-87f3-496d-a8ec-ea4e667fbc2b")
 			(effects
@@ -58129,7 +58576,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "e1c59235-cb44-4c0d-a672-4696e746bab6")
 			(effects
@@ -58149,6 +58596,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -58162,6 +58610,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -58175,6 +58624,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -58355,7 +58805,7 @@
 			(uuid "910fe0de-6aa6-419a-9619-160608af9c1e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "70c4a13e-7b81-4c31-8a28-1534227c8bcc")
 			(effects
@@ -58436,6 +58886,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -58449,6 +58900,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -58462,6 +58914,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -58542,7 +58995,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -58800,7 +59253,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -58883,7 +59336,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -59011,7 +59464,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "e50de31c-cacf-4547-a8d6-5e925ec327cc")
-		(at 166.6875 92.86875 180)
+		(at 166.65 92.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D18"
@@ -59047,6 +59500,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59060,6 +59514,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59073,6 +59528,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59230,7 +59686,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -59252,7 +59708,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -59263,7 +59719,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -59318,7 +59774,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -59545,7 +60001,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D42"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "8a4d96e3-be2e-4254-a799-00796698b4f8")
 			(effects
@@ -59557,7 +60013,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "0fceef87-7154-40ac-9bfa-5a40e3a7ff50")
 			(effects
@@ -59577,6 +60033,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59590,6 +60047,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59603,6 +60061,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59783,7 +60242,7 @@
 			(uuid "ddd827cc-2e6c-4c75-9c62-882a653f49b6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "c637d229-692d-4cdb-9bbe-0b4ae2d1f9c7")
 			(effects
@@ -59829,7 +60288,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "ea17b8e4-1aff-46d9-9b07-16daac7e5dbf")
-		(at 223.8375 130.96875 180)
+		(at 109.5225 130.510001 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D7"
@@ -59865,6 +60324,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59878,6 +60338,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -59891,6 +60352,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -60048,7 +60510,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -60070,7 +60532,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -60081,7 +60543,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -60136,7 +60598,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -60359,7 +60821,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "f0ee7edd-1603-4aa7-bd95-5775abef5cc0")
-		(at 109.5375 111.91875 180)
+		(at 109.55 111.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D14"
@@ -60395,6 +60857,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -60408,6 +60871,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -60421,6 +60885,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -60578,7 +61043,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -60600,7 +61065,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -60611,7 +61076,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -60666,7 +61131,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -60924,6 +61389,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -60937,6 +61403,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -60950,6 +61417,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -61030,7 +61498,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.15)
@@ -61288,7 +61756,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -61371,7 +61839,7 @@
 		)
 		(fp_arc
 			(start 6.085176 4.75022)
-			(mid 5.499389 6.164432)
+			(mid 5.499388 6.164432)
 			(end 4.085176 6.75022)
 			(stroke
 				(width 0.05)
@@ -61535,6 +62003,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -61548,6 +62017,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -61561,6 +62031,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -61733,7 +62204,7 @@
 		(descr "http://www.diodes.com/datasheets/ap02001.pdf p.144")
 		(tags "Diode SOD523")
 		(property "Reference" "D71"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.SilkS")
 			(uuid "d9a72bb3-1c03-44cc-8537-be49c77cc2f3")
 			(effects
@@ -61745,7 +62216,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 0 -1.4 270)
+			(at 0 -1.4 -90)
 			(layer "B.Fab")
 			(uuid "b7cd1e5f-77f7-44bc-968a-cec81a9ecb01")
 			(effects
@@ -61765,6 +62236,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -61778,6 +62250,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -61791,6 +62264,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -61971,7 +62445,7 @@
 			(uuid "40f9b245-fef0-4259-9301-2610aa2a065d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.3 270)
+			(at 0 1.3 -90)
 			(layer "B.Fab")
 			(uuid "638df74f-3ea4-447d-a274-0e099a86c32e")
 			(effects
@@ -62017,7 +62491,7 @@
 	(footprint "PCM_marbastlib-mx:LED_MX_6028R"
 		(layer "B.Cu")
 		(uuid "fecd27fc-488e-4154-af85-f2647d915c93")
-		(at 204.7875 111.91875 180)
+		(at 204.8 111.45 180)
 		(descr "Add-on for regular MX-footprints with 6028 reverse mount LED")
 		(tags "cherry MX 6028 rearmount rear mount led rgb backlight")
 		(property "Reference" "D9"
@@ -62053,6 +62527,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62066,6 +62541,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62079,6 +62555,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62236,7 +62713,7 @@
 		)
 		(fp_arc
 			(start 1.749484 0.919721)
-			(mid 1.712526 0.814069)
+			(mid 1.712539 0.814068)
 			(end 1.699999 0.702843)
 			(stroke
 				(width 0.1)
@@ -62258,7 +62735,7 @@
 		)
 		(fp_arc
 			(start 1.699999 -0.702842)
-			(mid 1.712536 -0.814064)
+			(mid 1.712536 -0.814065)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -62269,7 +62746,7 @@
 		)
 		(fp_arc
 			(start 1.046711 -1.568296)
-			(mid 1.63807 -1.504033)
+			(mid 1.638069 -1.504034)
 			(end 1.749484 -0.919719)
 			(stroke
 				(width 0.1)
@@ -62324,7 +62801,7 @@
 		)
 		(fp_arc
 			(start -1.046711 1.568299)
-			(mid -1.63807 1.504035)
+			(mid -1.638071 1.504035)
 			(end -1.749484 0.919721)
 			(stroke
 				(width 0.1)
@@ -62583,6 +63060,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62596,6 +63074,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62609,6 +63088,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62799,6 +63279,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62812,6 +63293,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62825,6 +63307,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -62999,20 +63482,12 @@
 		(uuid "fa2aa87b-b302-452f-b017-11ece9b2ba8f")
 	)
 	(segment
-		(start 230.98125 71.34375)
-		(end 116.68125 71.34375)
+		(start 230.98125 70.55)
+		(end 116.68125 70.55)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 7)
 		(uuid "d846a678-3492-43a7-841c-41de4dbaf15e")
-	)
-	(segment
-		(start 112.2625 131.71875)
-		(end 125.8625 131.71875)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 9)
-		(uuid "9cc3cd25-c336-43b2-ab55-a28849563d11")
 	)
 	(segment
 		(start 116.68125 90.39375)
@@ -63023,8 +63498,8 @@
 		(uuid "fa716de8-53bb-41e7-8cd0-51b6fe560cde")
 	)
 	(segment
-		(start 230.98125 109.44375)
-		(end 116.68125 109.44375)
+		(start 230.98125 108.65)
+		(end 116.68125 108.65)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 11)
@@ -63277,6 +63752,1150 @@
 		(layer "F.Cu")
 		(net 29)
 		(uuid "ad776525-2cea-4b5c-817c-54f5570c514a")
+	)
+	(segment
+		(start 221.1125 131.260001)
+		(end 207.5125 131.260001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 46)
+		(uuid "5fcd1e1d-383d-4b6b-a8d2-2c4c90053c47")
+	)
+	(segment
+		(start 202.0625 131.260001)
+		(end 188.4625 131.260001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 47)
+		(uuid "2b7d94ae-7de7-487f-946e-7e456e06e926")
+	)
+	(segment
+		(start 183.0125 131.260001)
+		(end 169.4125 131.260001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 48)
+		(uuid "c95a2cc6-5aaa-46b4-a6c0-b03ed7142d85")
+	)
+	(segment
+		(start 163.9625 131.260001)
+		(end 150.3625 131.260001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 49)
+		(uuid "1baf4a3c-8bf0-4000-8ccf-b21f60bcaae1")
+	)
+	(segment
+		(start 144.9125 131.260001)
+		(end 131.3125 131.260001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 50)
+		(uuid "4a385ebb-3d37-4688-8fcb-7cc587a419a9")
+	)
+	(segment
+		(start 125.8625 131.260001)
+		(end 112.2475 131.260001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 51)
+		(uuid "9ad06be2-a311-4628-abf2-759f0dde05fd")
+	)
+	(segment
+		(start 107.95 117.059283)
+		(end 107.95 123.685225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 52)
+		(uuid "0a5b42c8-8348-4913-992d-4f0fd506df38")
+	)
+	(segment
+		(start 105.8225 125.812725)
+		(end 105.8225 130.285001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 52)
+		(uuid "48d667d3-113f-4056-866f-0931d801dbe0")
+	)
+	(segment
+		(start 105.8225 130.285001)
+		(end 106.7975 131.260001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 52)
+		(uuid "7684e433-8289-43d4-abc9-67105e48534f")
+	)
+	(segment
+		(start 107.95 123.685225)
+		(end 105.8225 125.812725)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 52)
+		(uuid "a2cfec4a-6e8d-4c2b-b1ed-825eceed08a8")
+	)
+	(segment
+		(start 112.275 112.2)
+		(end 112.275 112.734283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 52)
+		(uuid "c86b32bd-7972-4e1c-92a4-11397566eb48")
+	)
+	(segment
+		(start 112.275 112.734283)
+		(end 107.95 117.059283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 52)
+		(uuid "e1cf0b14-431c-4a7f-82e0-6847fbfa10c9")
+	)
+	(segment
+		(start 201.1 111.225)
+		(end 201.1 110.05)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "2854456e-578e-44d3-b64c-a77a6f4f2787")
+	)
+	(segment
+		(start 202.1 109.05)
+		(end 210.65 109.05)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "2f74342b-f6c6-4e14-b9ed-dc6ed504c0f9")
+	)
+	(segment
+		(start 215.294262 113.694262)
+		(end 225.615021 113.694262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "3a1d5008-2a78-4321-ab7e-46d34ff4b229")
+	)
+	(segment
+		(start 210.65 109.05)
+		(end 215.294262 113.694262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "7bbfb71b-8e3a-4600-8bc9-67eb8fde8e3a")
+	)
+	(segment
+		(start 202.075 112.2)
+		(end 201.1 111.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "7d1dfd0c-7c6d-4d18-965e-404789dd3ef2")
+	)
+	(segment
+		(start 201.1 110.05)
+		(end 202.1 109.05)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "c8def2a4-9537-4062-b362-56450cc095db")
+	)
+	(segment
+		(start 225.615021 113.694262)
+		(end 226.575 112.734283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "e1d0da23-e8cc-481a-95b3-f5af19fba57c")
+	)
+	(segment
+		(start 226.575 112.734283)
+		(end 226.575 112.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 53)
+		(uuid "fcdaca00-75ee-4c31-abe9-ab3116a7adf8")
+	)
+	(segment
+		(start 221.125 112.2)
+		(end 220.15 111.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "04dc0457-8681-46f6-9263-1e66b97d8846")
+	)
+	(segment
+		(start 231.775 98.45)
+		(end 226.525 93.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "20b21d4b-028d-4dfd-9d1a-5827183254a9")
+	)
+	(segment
+		(start 231.775 108.846802)
+		(end 231.775 98.45)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "3bb3a39e-30f4-4c98-8684-1de3bbabdd62")
+	)
+	(segment
+		(start 220.15 110.05)
+		(end 221.15 109.05)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "5e07db6d-5d00-4436-8d5a-3330b1daf4e2")
+	)
+	(segment
+		(start 231.371802 109.25)
+		(end 231.775 108.846802)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "8ddde5cb-999c-478e-9cd3-b88303ecbfd5")
+	)
+	(segment
+		(start 220.15 111.225)
+		(end 220.15 110.05)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "96d3908c-5c1c-4f25-a26e-0c399fca8a79")
+	)
+	(segment
+		(start 229.9 109.25)
+		(end 231.371802 109.25)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "bb0369cf-a730-43f7-9167-bb1f6f3de47d")
+	)
+	(segment
+		(start 221.15 109.05)
+		(end 229.7 109.05)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "cf16e570-fe61-4f58-8de6-19999d1feab7")
+	)
+	(segment
+		(start 229.7 109.05)
+		(end 229.9 109.25)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 54)
+		(uuid "dac9a309-401e-4feb-81c6-3f294f190908")
+	)
+	(segment
+		(start 206.565059 113.694224)
+		(end 207.525 112.734283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "1c1291d3-f89c-4ea2-af8a-34dc0ad5c55b")
+	)
+	(segment
+		(start 183.025 112.2)
+		(end 182.05 111.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "251bebbc-6ced-494f-98a3-a6da8741b6bf")
+	)
+	(segment
+		(start 191.755777 109.205777)
+		(end 196.244224 113.694224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "3f8f7b9d-d84c-4ffa-b620-144e3cd3ff3d")
+	)
+	(segment
+		(start 182.05 110.2115)
+		(end 183.055723 109.205777)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "4b0b803d-c992-4d99-9f46-655c36ee35ba")
+	)
+	(segment
+		(start 196.244224 113.694224)
+		(end 206.565059 113.694224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "a4b47a24-8fe8-4489-a843-56ed3b56a238")
+	)
+	(segment
+		(start 183.055723 109.205777)
+		(end 191.755777 109.205777)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "b547ce3d-617f-47dc-82b4-40f6afa2e26d")
+	)
+	(segment
+		(start 207.525 112.734283)
+		(end 207.525 112.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "d33ca68a-acbc-453a-ba59-464c4499f58d")
+	)
+	(segment
+		(start 182.05 111.225)
+		(end 182.05 110.2115)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 55)
+		(uuid "d3d124ec-550d-4564-96b7-ff263f8b598b")
+	)
+	(segment
+		(start 188.475 112.734283)
+		(end 188.475 112.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "14d0bd4d-6037-47d6-95f1-6914e73b26e3")
+	)
+	(segment
+		(start 163 110.05)
+		(end 163.844263 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "3dab46c7-4705-4d18-9459-cb5f2945d6fb")
+	)
+	(segment
+		(start 172.705737 109.205737)
+		(end 177.194224 113.694224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "8a0ef7f2-3542-4a48-8fa0-d7352fa34bac")
+	)
+	(segment
+		(start 163.844263 109.205737)
+		(end 172.705737 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "91a5553b-a091-4d0f-9095-aed1a09e47e7")
+	)
+	(segment
+		(start 163 111.225)
+		(end 163 110.05)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "b4921cb6-de96-4f28-8e11-f43123c0e970")
+	)
+	(segment
+		(start 163.975 112.2)
+		(end 163 111.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "ce38c4f5-d177-45b4-95c8-495a30c6cc2f")
+	)
+	(segment
+		(start 187.515059 113.694224)
+		(end 188.475 112.734283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "df5272ff-dc59-4c91-9ce1-1f766070461b")
+	)
+	(segment
+		(start 177.194224 113.694224)
+		(end 187.515059 113.694224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 56)
+		(uuid "eb8a96f8-0e7d-41ae-a5df-910d7d1f9907")
+	)
+	(segment
+		(start 144.925 112.2)
+		(end 143.95 111.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "6001088b-0196-4950-a2d6-c14ef3d2869e")
+	)
+	(segment
+		(start 168.465059 113.694224)
+		(end 169.425 112.734283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "616f832d-e4d8-44d2-aa6b-f26cf79c29ce")
+	)
+	(segment
+		(start 157.350474 113.694224)
+		(end 168.465059 113.694224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "679fdbae-f3b6-4957-bed1-08441e562a13")
+	)
+	(segment
+		(start 152.861987 109.205737)
+		(end 157.350474 113.694224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "71d81251-e393-4b1c-b94a-f02046863dbd")
+	)
+	(segment
+		(start 144.306763 109.205737)
+		(end 152.861987 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "8c027cbd-a1c9-4232-8433-e6b6ee90abb3")
+	)
+	(segment
+		(start 143.95 109.5625)
+		(end 144.306763 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "b8a851fb-9017-44fb-9e70-14ca739f4908")
+	)
+	(segment
+		(start 143.95 111.225)
+		(end 143.95 109.5625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "dfab9458-a85e-475b-bb9c-80cc1dac0a6d")
+	)
+	(segment
+		(start 169.425 112.734283)
+		(end 169.425 112.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 57)
+		(uuid "f109f514-258d-406e-8f60-705de540416e")
+	)
+	(segment
+		(start 139.78496 113.694262)
+		(end 149.415021 113.694262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "4c8d1451-20e3-4195-b161-35fff5bb247f")
+	)
+	(segment
+		(start 135.296435 109.205737)
+		(end 139.78496 113.694262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "4e0a54a9-0ea7-49c4-9e79-7e2860c9ddb7")
+	)
+	(segment
+		(start 124.9 111.225)
+		(end 124.9 110.2115)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "5192eb38-9ca3-4097-9f82-cf26ac40eeb3")
+	)
+	(segment
+		(start 124.9 110.2115)
+		(end 125.905763 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "87b8321b-9af8-4cdb-89a5-ab230e2c4b6b")
+	)
+	(segment
+		(start 150.375 112.734283)
+		(end 150.375 112.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "bd2b0bec-f111-4159-9da6-32b02f02fbf0")
+	)
+	(segment
+		(start 125.905763 109.205737)
+		(end 135.296435 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "d1034db0-7118-4234-8eee-a2efc8c9cf53")
+	)
+	(segment
+		(start 125.875 112.2)
+		(end 124.9 111.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "e9634315-b87d-42cf-b565-c108baab5a60")
+	)
+	(segment
+		(start 149.415021 113.694262)
+		(end 150.375 112.734283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 58)
+		(uuid "ecef8dda-a21b-4e72-af6f-c6ef1639a7bc")
+	)
+	(segment
+		(start 105.85 111.225)
+		(end 105.85 110.2115)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "14cd2a9c-e870-4eac-b676-34d6c7e8e579")
+	)
+	(segment
+		(start 106.825 112.2)
+		(end 105.85 111.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "4d9cda7e-60ba-4fbb-8cc6-5d7a247f0212")
+	)
+	(segment
+		(start 105.85 110.2115)
+		(end 106.855763 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "625fbcb0-eb5a-422b-bd44-0dc323cbb5b7")
+	)
+	(segment
+		(start 115.555737 109.205737)
+		(end 120.65 114.3)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "6593a6b4-ca5d-402e-beae-0ea3dfae1273")
+	)
+	(segment
+		(start 106.855763 109.205737)
+		(end 115.555737 109.205737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "6f578db1-8969-4939-9486-42ae3362c0cd")
+	)
+	(segment
+		(start 129.759283 114.3)
+		(end 131.325 112.734283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "c980112b-acfa-4e82-9eab-10054edb2594")
+	)
+	(segment
+		(start 131.325 112.734283)
+		(end 131.325 112.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "cca97832-bf73-42a1-a368-02f593eb3e4b")
+	)
+	(segment
+		(start 120.65 114.3)
+		(end 129.759283 114.3)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 59)
+		(uuid "e0b63d2e-c0cd-4834-9658-ca6a6fff851b")
+	)
+	(segment
+		(start 221.075 93.2)
+		(end 207.475 93.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 60)
+		(uuid "37cbc22d-a5d4-4337-b2ac-ad3b4dacc597")
+	)
+	(segment
+		(start 202.025 93.2)
+		(end 188.425 93.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 61)
+		(uuid "d211d646-08d6-408e-9ff9-dd858b25df58")
+	)
+	(segment
+		(start 182.975 93.2)
+		(end 169.375 93.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 62)
+		(uuid "5ba4facb-6c4d-434b-8182-91c1844e1037")
+	)
+	(segment
+		(start 163.925 93.2)
+		(end 150.325 93.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 63)
+		(uuid "e38a452a-9d83-403d-b73f-7092e66ca71b")
+	)
+	(segment
+		(start 144.875 93.2)
+		(end 131.275 93.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 64)
+		(uuid "6687c2d9-3650-439d-8a92-76bb93c9b6d1")
+	)
+	(segment
+		(start 125.825 93.2)
+		(end 112.225 93.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 65)
+		(uuid "398ff22b-eeea-432f-b872-426ca228c0e4")
+	)
+	(segment
+		(start 106.775 93.2)
+		(end 105.8 92.225)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 66)
+		(uuid "19e52b2c-5ebd-40e5-856b-3590b9e4aa43")
+	)
+	(segment
+		(start 110.1275 76.9425)
+		(end 112.1975 74.8725)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 66)
+		(uuid "25dc33b1-13d4-4b2f-b92f-079a082635a7")
+	)
+	(segment
+		(start 105.8 87.56)
+		(end 110.1275 83.2325)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 66)
+		(uuid "3e38468a-58d1-4fda-a94e-d80ebceb72e9")
+	)
+	(segment
+		(start 105.8 92.225)
+		(end 105.8 87.56)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 66)
+		(uuid "a8b3fa61-6bb5-4110-960a-cf9cd96306bb")
+	)
+	(segment
+		(start 112.1975 74.8725)
+		(end 112.1975 74.16)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 66)
+		(uuid "ea55c2f2-1b05-4e08-8259-cfa64846ff14")
+	)
+	(segment
+		(start 110.1275 83.2325)
+		(end 110.1275 76.9425)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 66)
+		(uuid "eef201b6-c484-4efa-80d3-e350a5b372ef")
+	)
+	(segment
+		(start 216.422027 71.165777)
+		(end 220.910512 75.654262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "3dee21ad-dd04-4e82-afb7-7a4e62aa60b3")
+	)
+	(segment
+		(start 220.910512 75.654262)
+		(end 225.575021 75.654262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "42e0c400-4561-49c7-bfd1-3017d8cc0eac")
+	)
+	(segment
+		(start 201.06 73.185)
+		(end 201.06 72.1715)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "5b60faac-e4c3-4c7a-b7e9-ce898d1d5def")
+	)
+	(segment
+		(start 201.06 72.1715)
+		(end 202.065723 71.165777)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "6f1f3f74-0419-49da-811c-dc8b7a0764f9")
+	)
+	(segment
+		(start 225.575021 75.654262)
+		(end 226.535 74.694283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "bfa31059-016f-4c74-a51d-b57cb1302dfa")
+	)
+	(segment
+		(start 226.535 74.694283)
+		(end 226.535 74.16)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "dba3072d-46a6-4951-9920-11f1315f0dad")
+	)
+	(segment
+		(start 202.065723 71.165777)
+		(end 216.422027 71.165777)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "e0a40105-ea2a-4c0f-8239-7a3b17eb71c3")
+	)
+	(segment
+		(start 202.035 74.16)
+		(end 201.06 73.185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 67)
+		(uuid "fb689c6d-c378-45ed-86d1-6b31c3a1d1c0")
+	)
+	(segment
+		(start 231.775 70.746802)
+		(end 231.775 60.252501)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 68)
+		(uuid "10a813aa-7551-4811-8d34-a61f5e29b99a")
+	)
+	(segment
+		(start 231.775 60.252501)
+		(end 226.5625 55.040001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 68)
+		(uuid "47252a19-5e98-4076-a46c-205c3ef380c3")
+	)
+	(segment
+		(start 220.11 73.185)
+		(end 220.11 71.5025)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 68)
+		(uuid "70e55e49-7de4-44cc-93f1-13f039b05916")
+	)
+	(segment
+		(start 221.085 74.16)
+		(end 220.11 73.185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 68)
+		(uuid "9216f0c7-6761-4d36-9b01-a317620a761c")
+	)
+	(segment
+		(start 220.11 71.5025)
+		(end 220.4625 71.15)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 68)
+		(uuid "bd74aeb5-22cb-4c63-a336-ede25bfd33a0")
+	)
+	(segment
+		(start 231.371802 71.15)
+		(end 231.775 70.746802)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 68)
+		(uuid "d09f697a-9659-4328-8e2b-b0750b5215d7")
+	)
+	(segment
+		(start 220.4625 71.15)
+		(end 231.371802 71.15)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 68)
+		(uuid "e322a996-c49f-483c-9193-3a68b43fd6c9")
+	)
+	(segment
+		(start 206.525059 75.654224)
+		(end 207.485 74.694283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "3f329740-a66e-4864-a8b2-ad6d452d7899")
+	)
+	(segment
+		(start 182.01 72.008936)
+		(end 182.868936 71.15)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "5d6cfc11-bb07-43e7-b480-950d853747fe")
+	)
+	(segment
+		(start 201.154224 75.654224)
+		(end 206.525059 75.654224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "74ef13e9-6572-49b2-95fb-ce8b0c0fb3e1")
+	)
+	(segment
+		(start 182.01 73.185)
+		(end 182.01 72.008936)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "873b48e6-7586-44d5-b8fe-452c4b718426")
+	)
+	(segment
+		(start 207.485 74.694283)
+		(end 207.485 74.16)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "9423fc09-414f-4685-85c5-b6fe2b772cd2")
+	)
+	(segment
+		(start 182.868936 71.15)
+		(end 196.65 71.15)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "9ea2d2ae-38c6-4fcb-b28b-24d5f58fdb52")
+	)
+	(segment
+		(start 182.985 74.16)
+		(end 182.01 73.185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "ad315519-9fa3-406d-a7ff-34f2dfb83a46")
+	)
+	(segment
+		(start 196.65 71.15)
+		(end 201.154224 75.654224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 69)
+		(uuid "b93ce500-ecb4-43d4-91e5-bc1156212f0e")
+	)
+	(segment
+		(start 188.9125 75.40625)
+		(end 188.9125 74.6375)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "60e73c4b-8f6f-49e6-8321-3b6a18aee229")
+	)
+	(segment
+		(start 182.810512 75.654262)
+		(end 188.664488 75.654262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "652b8be1-e437-4324-8a0f-03aaa60d117a")
+	)
+	(segment
+		(start 178.321987 71.165737)
+		(end 182.810512 75.654262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "74e6b172-b7c3-4b0a-91dd-7a90a0272c76")
+	)
+	(segment
+		(start 162.96 71.5025)
+		(end 163.296763 71.165737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "97255246-1fdd-430f-ac79-3479d33c5af3")
+	)
+	(segment
+		(start 188.664488 75.654262)
+		(end 188.9125 75.40625)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "9ac5c722-2fca-4b2d-b03c-e941e247d10e")
+	)
+	(segment
+		(start 163.935 74.16)
+		(end 162.96 73.185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "ab0a49b0-d58a-42b9-9365-7aed4b64835b")
+	)
+	(segment
+		(start 162.96 73.185)
+		(end 162.96 71.5025)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "ce6ebee3-6e56-4927-9083-985bd1b799a5")
+	)
+	(segment
+		(start 163.296763 71.165737)
+		(end 178.321987 71.165737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "e7921bca-0d0e-4f8f-b94c-cc0d4388fa38")
+	)
+	(segment
+		(start 188.9125 74.6375)
+		(end 188.435 74.16)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 70)
+		(uuid "efcac151-a8dd-4971-bf26-b322b8cb3ea8")
+	)
+	(segment
+		(start 158.204224 75.654224)
+		(end 168.425059 75.654224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "0a3c9872-5369-4006-a6a0-5abd6135070a")
+	)
+	(segment
+		(start 143.91 71.5025)
+		(end 144.4625 70.95)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "37cf6760-0916-4fb2-8c78-e55245c83b78")
+	)
+	(segment
+		(start 144.885 74.16)
+		(end 143.91 73.185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "6db87bbd-c369-4400-8b0b-52a4aa675593")
+	)
+	(segment
+		(start 143.91 73.185)
+		(end 143.91 71.5025)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "780041b1-fc48-4985-a6d2-4e71935a3870")
+	)
+	(segment
+		(start 153.5 70.95)
+		(end 158.204224 75.654224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "8b4323c5-ec41-4c3c-81b8-d1adae53da2c")
+	)
+	(segment
+		(start 144.4625 70.95)
+		(end 153.5 70.95)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "b1ae611d-939d-4778-bc4c-35848d16b7ae")
+	)
+	(segment
+		(start 168.425059 75.654224)
+		(end 169.385 74.694283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "bed34a58-23c2-4b93-8afd-b0486b3e86f3")
+	)
+	(segment
+		(start 169.385 74.694283)
+		(end 169.385 74.16)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 71)
+		(uuid "fb2e4eda-2e86-476a-8e29-1ce1feda8f4e")
+	)
+	(segment
+		(start 125.865723 71.165777)
+		(end 140.222027 71.165777)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "5c401c10-c721-423e-8ad3-d2b52d9b68b9")
+	)
+	(segment
+		(start 140.222027 71.165777)
+		(end 144.710474 75.654224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "889d2274-831d-44f7-a647-4f0b40cba159")
+	)
+	(segment
+		(start 124.86 72.1715)
+		(end 125.865723 71.165777)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "9e68646b-e3db-4868-8fb5-b9710ba1edff")
+	)
+	(segment
+		(start 124.86 73.185)
+		(end 124.86 72.1715)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "bdb923ba-ec2c-489f-8ab7-a6fc23d584e3")
+	)
+	(segment
+		(start 149.375059 75.654224)
+		(end 150.335 74.694283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "cf81b226-fd5f-49b5-8bf7-750bcd289e7f")
+	)
+	(segment
+		(start 125.835 74.16)
+		(end 124.86 73.185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "d7ddb7a9-d634-491f-9140-aa4389bd7568")
+	)
+	(segment
+		(start 150.335 74.694283)
+		(end 150.335 74.16)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "daec8d01-1254-4b06-9398-2f520b246e3f")
+	)
+	(segment
+		(start 144.710474 75.654224)
+		(end 149.375059 75.654224)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 72)
+		(uuid "e3fba3fd-4f6a-4780-adc9-7afc724784e5")
+	)
+	(segment
+		(start 121.171987 71.165737)
+		(end 125.660512 75.654262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "0fac85a8-a608-45b0-92dd-44deca54329d")
+	)
+	(segment
+		(start 105.7725 73.185)
+		(end 105.7725 72.1715)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "11de5e2a-5843-4c62-9f99-ed1ebdf16e4e")
+	)
+	(segment
+		(start 106.778263 71.165737)
+		(end 121.171987 71.165737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "3b899f23-6c2a-40af-b1e5-2519c9894ace")
+	)
+	(segment
+		(start 105.7725 72.1715)
+		(end 106.778263 71.165737)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "4f1b12e2-502a-4b29-9800-1cfc87965176")
+	)
+	(segment
+		(start 131.285 74.694283)
+		(end 131.285 74.16)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "927a536a-2cba-4197-8d16-f6a06adde33c")
+	)
+	(segment
+		(start 125.660512 75.654262)
+		(end 130.325021 75.654262)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "be0560f7-1a71-471b-9ed3-932e369a1c4e")
+	)
+	(segment
+		(start 130.325021 75.654262)
+		(end 131.285 74.694283)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "e7a63b35-43e5-4fd8-aebc-4b4acec201dc")
+	)
+	(segment
+		(start 106.7475 74.16)
+		(end 105.7725 73.185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 73)
+		(uuid "fde79b2f-dba9-47b4-bb30-b5687e448307")
+	)
+	(segment
+		(start 221.1125 55.040001)
+		(end 207.5125 55.040001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 74)
+		(uuid "a589398d-dd9d-4486-9f9c-c7fc5a4d8a29")
+	)
+	(segment
+		(start 202.0625 55.040001)
+		(end 188.4075 55.040001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 75)
+		(uuid "e675aaad-2988-4a20-b8ce-e2ef5e0f29c7")
+	)
+	(segment
+		(start 182.9575 55.040001)
+		(end 169.3575 55.040001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 76)
+		(uuid "b76443ac-a51f-4874-91b2-e00f0e6c8cfd")
+	)
+	(segment
+		(start 163.9075 55.040001)
+		(end 150.3625 55.040001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 77)
+		(uuid "66e2dd6f-8cc3-4b66-9068-a6b4be69e294")
+	)
+	(segment
+		(start 144.9125 55.040001)
+		(end 131.2575 55.040001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 78)
+		(uuid "10b52ff7-a8a1-4bae-9867-8aa5968a1d4a")
+	)
+	(segment
+		(start 125.8075 55.040001)
+		(end 112.2625 55.040001)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 79)
+		(uuid "40c92df8-e01a-49cb-aee0-9fbf4da93bf2")
 	)
 	(segment
 		(start 115.6275 44.1325)
