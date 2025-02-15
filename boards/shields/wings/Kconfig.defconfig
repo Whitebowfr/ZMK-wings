@@ -1,0 +1,29 @@
+config USB_DEVICE_MANUFACTURER
+    default "Whitebow"
+
+config BT_DIS_MANUF
+    default "Whitebow"
+
+config CONFIG_ZMK_SLEEP
+    default y
+
+config CONFIG_ZMK_PM_SOFT_OFF
+    default y
+
+if SHIELD_WINGS_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Wings"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_WINGS_LEFT || SHIELD_WINGS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,12 @@
+file_format: "1"
+id: wings
+name: Wings
+type: shield
+url: https://github.com/Whitebowfr/ZMK-wings
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+siblings:
+  - wings_left
+  - wings_right
