@@ -21,6 +21,12 @@
         col-offset = <7>;
     };
 
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "col2row";
+    };
+
     behaviors {
         hw_soft_off: hw_soft_off {
             compatible = "zmk,behavior-soft-off";
