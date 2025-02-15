@@ -53,13 +53,13 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+            // | studio|     |     |      |      |      |                   |      |       |       |      |       |       |
             // |       |     |     |      |      |      |                   |      |       |   ^   |      |       |       |
             // |       |     |     |      |      |      |                   |      |   <-  |   v   |  ->  |       |       |
             // |       |     |     |      |      |      |        |  |       |      |       |   =   |  [   |   ]   |   \   |
             //               |     |      |      | LOWER|                   | RAISE|       |       |      |
             bindings = <
-                &trans     &trans     &trans     &trans     &trans      &trans               &trans     &trans     &trans     &trans     &trans     &trans
+                &studio_unlock &trans &trans     &trans     &trans      &trans               &trans     &trans     &trans     &trans     &trans     &trans
                 &trans     &trans     &trans     &trans     &trans      &trans               &trans     &trans     &kp UP     &trans     &trans     &trans
                 &trans     &trans     &trans     &trans     &trans      &trans               &trans     &kp LEFT   &kp DOWN   &kp LEFT   &trans     &trans
                 &trans     &trans     &trans     &trans     &trans      &trans               &trans     &trans     &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH
