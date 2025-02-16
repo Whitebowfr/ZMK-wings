@@ -37,7 +37,7 @@
         };
     };
 
-    keys {
+    wake_up_keys : keys {
         compatible = "gpio-keys";
     };
 };
