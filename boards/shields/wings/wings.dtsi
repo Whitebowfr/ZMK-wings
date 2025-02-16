@@ -36,8 +36,4 @@
             hold-time-ms = <1000>; // Only turn off if the key is held for 2 seconds or longer.
         };
     };
-
-    wake_up_keys : keys {
-        compatible = "gpio-keys";
-    };
 };
